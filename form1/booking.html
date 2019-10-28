@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+
+
+	<meta charset="UTF-8">
+	<title>book now</title>
+	<link rel="stylesheet" href="styles1.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <h2>Book a space</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+	<div>
+	Name:
+	</div>
+	
+    <div class="input_field">
+        <input type="text" required placeholder="Name" id="name">
+    </div>
+	
+	<div>
+	Email:
+	</div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="address">
+    </div>
+	
+	<div>
+	Phone:
+	</div>
+	
+    <div class="input_field">
+        <input type="text" required placeholder="Phone" id="phone">
+    </div>
+	
+	<div>
+	Role:
+	</div>
+	
+    <div class="input_field">
+        <input type="radio" name="role" value="Student" checked> Student<br>
+		<input type="radio" name="role" value="Teaching staff"> Teaching staff<br>
+		<input type="radio" name="role" value="Support/administrative staff"> Support/administrative staff 
+    </div>
+	
+	
+	
+	
+	<div>
+	Reason for booking:
+	</div>
+	
+    <div class="input_field">
+        <textarea required placeholder="Message" id="message"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
