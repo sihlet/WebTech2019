@@ -43,11 +43,13 @@
             <nav class="main-nav dark transparent stick-fixed">
                 <div class="full-wrapper relative clearfix">
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="index.html" class="logo">
+                        <a href="#top" class="logo">
                             <img src="images/logo-white.png" alt="launchpad Ashesi" />
                         </a>
                     </div>
-                    
+                    <div class="mobile-nav">
+                        <i class="fa fa-bars"></i>
+                    </div>
                 </div>
             </nav>
 
@@ -59,20 +61,20 @@
 <div class="wrapper">
   <h2 style="color: #ffb400 ">Book a space</h2>
   <div id="error_message"></div>
-  <form id="myform" method = "POST" onsubmit="return validate();" action="controller/booking_process.php">
-	<div style="color: white;">	
+  <form id="myform" method = "POST" onsubmit="return validate();">
+	<div style="color: white;">
 	Name:
 	</div>
 	
     <div class="input_field">
-        <input type="text" name = "name" required placeholder="Name" id="name">
+        <input type="text" required placeholder="Name" id="name">
     </div>
 	
 	<div style="color: white;">
 	Ashesi email:
 	</div>
     <div class="input_field">
-        <input type="text" name= "email" placeholder="Email" id="address">
+        <input type="text" placeholder="Email" id="address">
     </div>
 	
 	<div style="color: white;">
@@ -80,7 +82,7 @@
 	</div>
 	
     <div class="input_field">
-        <input type="text" name= "phone" required placeholder="Phone number" id="phone">
+        <input type="text" required placeholder="Phone" id="phone">
     </div>
 	
 	<div style="color: white;">
@@ -89,8 +91,8 @@
 	
     <div class="input_field" style="color: white;">
         <input type="radio" name="role" value="Student" > Student<br>
-		<input type="radio" name="role" value="Faculty"> Faculty<br>
-		<input type="radio" name="role" value="Support"> Support
+		<input type="radio" name="role" value="Teaching staff"> Faculty<br>
+		<input type="radio" name="role" value="Support/administrative staff"> Support
     </div>
 	
 	
@@ -101,61 +103,12 @@
 	</div>
 	
     <div class="input_field">
-        <textarea required placeholder="Message" name="reason" id="message"></textarea>
+        <textarea required placeholder="Message" id="message"></textarea>
     </div>
     <div class="btn" >
-        <input type="submit" style="color: white;" name="bclicked">
+        <input type="submit" style="color: white;">
     </div>
   </form>
-  
- 
-  
-  
-  
-</div>
-
-
-<div class="wrapper2" style="position: relatve; padding-bottom: 0 ">
-	
-	 <footer class=" bg-gray-lighter footer pb-60">
-                <div class="container">
-                    
-                    <!-- Footer Logo -->
-                    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-                        <a href="index.html"><img src="images/new logo.png" width="78" height="36" alt="" /></a>
-                    </div>
-                    <!-- End Footer Logo -->
-                    
-                    <!-- Social Links -->
-                    
-                    <!-- End Social Links -->  
-                    
-                    <!-- Footer Text -->
-                    <div class="footer-text">
-                        
-                        <!-- Copyright -->
-                        <div class="footer-copy font-alt">
-                             LAUNCHPAD c.2019
-                        </div>
-                        <!-- End Copyright -->
-                        
-                        <div class="footer-made">
-                            Made with love for great people.
-                        </div>
-                        
-                    </div>
-                    <!-- End Footer Text --> 
-                    
-                 </div>
-                 
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-                 </div>
-                 <!-- End Top Link -->
-                 
-            </footer>
 </div>
 
 

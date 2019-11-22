@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">      
 	<meta charset="UTF-8">
-	<title>Personal info</title>
+	<title>Time & date</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="scripts.js"></script>
 </head>
@@ -47,7 +47,9 @@
                             <img src="images/logo-white.png" alt="launchpad Ashesi" />
                         </a>
                     </div>
-                    
+                    <div class="mobile-nav"> 
+                    <!--- incase of nav bar--->
+                    </div>
                 </div>
             </nav>
 
@@ -59,63 +61,36 @@
 <div class="wrapper">
   <h2 style="color: #ffb400 ">Book a space</h2>
   <div id="error_message"></div>
-  <form id="myform" method = "POST" onsubmit="return validate();" action="controller/booking_process.php">
-	<div style="color: white;">	
-	Name:
+  <form action="controller/timeDate_process.php" id="myform" method="POST" onsubmit= "return checkDateForm();">
+	<div style="color: white;">
+	Date:
 	</div>
 	
     <div class="input_field">
-        <input type="text" name = "name" required placeholder="Name" id="name">
+        <input type="Date" name="date" required placeholder="dd/mm/yyyy" id="date">
     </div>
 	
 	<div style="color: white;">
-	Ashesi email:
+	Time:
 	</div>
-    <div class="input_field">
-        <input type="text" name= "email" placeholder="Email" id="address">
-    </div>
-	
-	<div style="color: white;">
-	Phone:
-	</div>
-	
-    <div class="input_field">
-        <input type="text" name= "phone" required placeholder="Phone number" id="phone">
-    </div>
-	
-	<div style="color: white;">
-	Role:
-	</div>
-	
     <div class="input_field" style="color: white;">
-        <input type="radio" name="role" value="Student" > Student<br>
-		<input type="radio" name="role" value="Faculty"> Faculty<br>
-		<input type="radio" name="role" value="Support"> Support
+        <input type="radio" name="time" value="17:00:00"> 5pm<br>
+        <input type="radio" name="time" value="18:00:00"> 6pm<br>
+        <input type="radio" name="time" value="19:00:00"> 7pm<br>
+        <input type="radio" name="time" value="20:00:00"> 8pm<br>
+        <input type="radio" name="time" value="21:00:00"> 9pm<br>
+        <input type="radio" name="time" value="22:00:00"> 10pm<br>
     </div>
 	
 	
-	
-	
-	<div style="color: white;" >
-	Reason for booking:
-	</div>
-	
-    <div class="input_field">
-        <textarea required placeholder="Message" name="reason" id="message"></textarea>
-    </div>
     <div class="btn" >
-        <input type="submit" style="color: white;" name="bclicked">
+        <!--<input type="submit" onsubmit= "window.location.href = 'booking.html';" formaction="booking.html"> -->
+        <input type="submit" name="bclicked">
     </div>
   </form>
-  
- 
-  
-  
-  
 </div>
 
-
-<div class="wrapper2" style="position: relatve; padding-bottom: 0 ">
+<div class="wrapper2" style="position: relative; padding-bottom: 0 ">
 	
 	 <footer class=" bg-gray-lighter footer pb-60">
                 <div class="container">
